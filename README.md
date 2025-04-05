@@ -3,7 +3,6 @@
 A modernized version of the classic Snake game implemented in Java, featuring smooth graphics, arcade-style effects, and intuitive gameplay. 🐍
 
 ## Features ✨
-
 - **Smooth Gameplay**: Enjoy fluid animations with antialiasing and gradient effects.
 - **Arcade-Style Design**: Includes retro fonts, glowing text effects, and vibrant colors.
 - **Dynamic Grid**: A visually appealing grid layout for better gameplay experience.
@@ -11,7 +10,6 @@ A modernized version of the classic Snake game implemented in Java, featuring sm
 - **Interactive UI**: Displays the score in real-time and shows game-over messages with restart instructions.
 
 ## Gameplay Instructions 🎮
-
 - Use the arrow keys to control the snake's direction:
   - `↑` Up
   - `↓` Down
@@ -26,59 +24,62 @@ A modernized version of the classic Snake game implemented in Java, featuring sm
 1. Clone this repository:
 
 ```bash
-
+git clone https://github.com/sud3801/snake_Game.git
 ```
 
-2. Run the program:
+2. Compile the program:
 
 ```bash
+cd snake_Game
+mkdir bin
+javac -d bin src/com/snakeGame/*.java
+```
 
+3. Run the program
+
+```bash
+cd ..
+java -cp bin com.snakeGame.Game
 ```
 
 ## Screenshots 📸
-
-### Game Start Screen
-
+### Game Start Screen:
 <img src="./Screenshots/Screenshot_snakeGame_Start.jpg" width="50%" height="50%">
 
-### GamePlay
-
+### GamePlay:
 <img src="./Screenshots/Screenshot_snakeGame.png" width="50%" height="50%">
 
-### Game Over Screen
-
+### Game Over Screen:
 <img src="./Screenshots/Screenshot_snakeGame_Restart.png" width="50%" height="50%">
 
-## Project Structure 📂
 
+## Project Structure 📂
 ```
 snake_Game/
 ├── bin/
 │ └── com/
-│   └──(all the class files)
+│   └──snakeGame
+│     └──(all class files)
 ├── src/
 │ └── com/
 │   └──snakeGame/
-|     └──Game.java 
-|     ├──GameFrame.java 
+|     └──Game.java #To start the game
+|     ├──GameFrame.java #Represents game panel
 |     ├──GamePanel.java # Main game logic
 └── README.md # Project documentation
 ```
 
 ## Technologies Used 🛠️
-
 - **Programming Language**: [Java](https://www.oracle.com/java/)
 - **Graphics**: Java Swing and AWT for rendering
 
 ## Future Enhancements 🚀
-
 - Add difficulty levels (easy, medium, hard).
 - Introduce new power-ups or obstacles.
 - Implement multiplayer mode.
 - Add sound effects and background music.
 
 ## Contributing 🤝
-
 Contributions are welcome! Feel free to fork this repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
 Enjoy playing Snake! 🐍✨
